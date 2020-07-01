@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" type="text/css" href="css/headerAndNav.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/sec_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/page5.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+		<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<ul class="headerul">
+					<li class="headerli">
+						<div class="logo"></div>
+						<div class="headerTitle">
+							儿羽教育咨询有限公司
+						</div>
+
+					</li>
+					<li class="headerli">
+						<div class="headerdiv">
+							<p class="headerText">联系方式 <br /> <span class="headerText2">400-000-0026</span>
+							</p>
+						</div>
+						<div class="headera " @click="flag=!flag"></div>
+					</li>
+				</ul>
+			</div>
+
+			<nav class="home_nav " v-if="flag">
+				<a href="home.html">关于儿羽</a>
+				<a href="page2.html">加盟我们</a>
+				<a href="page3.html">金牌项目</a>
+				<a href="page4.html">信息化管理系统</a>
+				<a href="javascript:;">儿羽商学院</a>
+				<a href="page6.html">儿羽动态</a>
+				<a href="page8.html">联系我们</a>
+			</nav>
+			<!-- 	<div class="fix">
+				<div class="s5_logo3 circle" @click="flag2=!flag2">
+				</div>
+				<p @click="flag2=!flag2">联系客服</p>
+			</div>
+			<div class="dig" v-if="flag2">
+				<p>扫码联系</p>
+				<div class="dig_imgbox">
+					<img src="image/c_qr.png" width="140">
+				</div>
+		
+			</div> -->
+		</div>
+		<div class="page_kv">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="image/page2/banner.png" class="p5sp"></div>
+					<div class="swiper-slide"><img src="image/page2/banner.png" class="p5sp"></div>
+					<div class="swiper-slide"><img src="image/page2/banner.png" class="p5sp"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<section class="p5sec1">
+			<h1 class="sec1_h1">鸿基始创，骏业日新</h1>
+			<ul>
+				<li>
+					<p class="p5sec1_head">
+						营销培训
+					</p>
+					<div class="p5sec1_content">
+						<p>
+							百战实践，&nbsp;&nbsp;&nbsp;&nbsp;<br />
+							落地实操，&nbsp;&nbsp;&nbsp;&nbsp;<br />
+							成长虹业绩。</p>
+					</div>
+				</li>
+				<li>
+					<p class="p5sec1_head">
+						课程培训
+					</p>
+					<div class="p5sec1_content">
+						<p>
+							与时俱进，&nbsp;&nbsp;&nbsp;&nbsp;<br />
+							精品课程，&nbsp;&nbsp;&nbsp;&nbsp;<br />
+							迎市场需求。</p>
+					</div>
+				</li>
+				<li>
+					<p class="p5sec1_head">
+						管理培训
+					</p>
+					<div class="p5sec1_content">
+						<p>
+							追求卓越，&nbsp;&nbsp;&nbsp;&nbsp;<br />
+							高速成长，&nbsp;&nbsp;&nbsp;&nbsp;<br />
+							著标准运营。</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h1 class="sec1_h1">立足实践，共享经验</h1>
+			<div class="p5sec2model">
+				<div class="bg float_right">
+					<p class="model_p radius_left">
+						<span>
+							选址顾问
+						</span>
+
+					</p>
+					<div class="model_div radius_right">
+						<p>
+							店址选择得当，意味商家拥有优店址选择得当，意味商家拥有优越的“地利”优势。儿羽选址顾问，立足商业房产9年，多维度专业化选址助力。周密规划，深入调查，妥善安排，为加盟商提供最好的选择。
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="p5sec2model">
+				<div class="bg3 float_left">
+					<p class="model_p2 radius_right">
+						<span>
+							课程培训
+						</span>
+
+					</p>
+					<div class="model_div model_div2 radius_left">
+						<p>
+							集百家之真言，立实践之经验，成万家之福音。<br />
+							儿羽课程团队辗转全国各地，在进行授业的同时，不断学习新的知识。再结合直营店百战实践，最终铸成精品课程。<br />
+							与时储行，提高市场应变能力，立帆启航，儿羽为加盟商保驾护航。
+
+
+						</p>
+					</div>
+
+
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="p5sec2model">
+				<div class="bg2 float_right">
+					<p class="model_p sp radius_left">
+						<span>
+							标准化课程
+						</span>
+
+					</p>
+					<div class="model_div radius_right">
+						<p>
+							儿羽标准化运营体系，解决店铺管理苦恼。<br />
+							儿羽分别从员工管理、服务质量、店铺日常管理等多方面入手，建立以反映市场需求、顾客满意为核心的有效标准体系。保证师资和服务质量的稳定。
+
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p5_sec3">
+			<h1 class="sec1_h1">儿羽资讯</h1>
+			<ul>
+				<li>
+					<div class="s3bg1 p5s3_div ">
+
+						<p><span class="s3title">四字标题&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="s3content">内容内容内容内容内容内容内容</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="s3bg2 p5s3_div ">
+
+						<p><span class="s3title">四字标题&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="s3content">内容内容内容内容内容内容内容</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="s3bg3 p5s3_div ">
+
+						<p><span class="s3title">四字标题&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="s3content">内容内容内容内容内容内容内容</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="s3bg4 p5s3_div ">
+
+						<p><span class="s3title">四字标题&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="s3content">内容内容内容内容内容内容内容</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="sec5">
+			<ul class="sec5_ul">
+				<li class="sec5_li2">
+					<div class="s5_logo1"></div>
+					<p class="s5_p">儿羽婴幼儿水育馆<br />官方微博</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo2"></div>
+					<p class="s5_p">儿羽商学院<br />官方公众号</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo3"></div>
+					<p class="s5_p">儿羽little wings<br />官方微信</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="sec6">
+			<p><span>细致早教，儿羽相伴</span><br />加入我们，为您提供全方位解决方案</p>
+		</section>
+		<footer class="ftr">
+			<ul>
+				<li>官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+			</ul>
+			<p>Copyright &#169 www.eryu.com,All Rights Reserved.</p>
+		</footer>
+
+
+
+		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					flag: false,
+					flag2: false
+				},
+				methods: {}
+			});
+			var swiper = new Swiper('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+		</script>
+	</body>
+</html>

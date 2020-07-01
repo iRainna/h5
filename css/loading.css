@@ -1,0 +1,208 @@
+.loading {
+	/* margin: 5rem auto; */
+	width: 75px;
+	height: 75px;
+	position: relative;
+}
+
+.loading .progress {
+	position: absolute;
+	width: 56.25px;
+	height: 56.25px;
+	background-color: white;
+	border-radius: 50%;
+	left: 9.375px;
+	top: 9.375px;
+	/* line-height: 56.25px; */
+	text-align: center;
+	overflow: hidden;
+}
+
+.left,
+.right {
+	width: 37.5px;
+	height: 75px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	background-color: rgb(191,191,191);
+}
+
+.left {
+	border-radius: 75px 0 0 75px;
+
+}
+
+.right {
+	border-radius: 0 75px 75px 0;
+
+}
+
+.left2:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 75px 0 0 75px;
+	background-color: rgb(251, 130, 70);
+
+}
+
+.right2:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 0 75px 75px 0;
+	background-color: rgb(251, 130, 70);
+
+}
+
+.left2:after {
+	transform-origin: right center;
+	transform: rotateZ(-164deg);
+}
+
+.right2:after {
+	transform-origin: left center;
+	transform: rotateZ(0deg);
+}
+
+.left1:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 75px 0 0 75px;
+	background-color: rgb(33, 172, 239);
+
+}
+
+.right1:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 0 75px 75px 0;
+	background-color: rgb(33, 172, 239);
+
+}
+
+.left1:after {
+	transform-origin: right center;
+	transform: rotateZ(-91deg);
+}
+
+.right1:after {
+	transform-origin: left center;
+	transform: rotateZ(0deg);
+}
+
+.left3:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 75px 0 0 75px;
+	background-color: rgb(237, 112, 120);
+
+}
+
+.right3:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 0 75px 75px 0;
+	background-color: rgb(237, 112, 120);
+
+}
+
+.left3:after {
+	transform-origin: right center;
+	transform: rotateZ(-65deg);
+}
+
+.right3:after {
+	transform-origin: left center;
+	transform: rotateZ(0deg);
+}
+
+.left4:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 75px 0 0 75px;
+	background-color: rgb(191, 191, 191);
+
+}
+
+.right4:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 37.5px;
+	height: 75px;
+	border-radius: 0 75px 75px 0;
+	background-color: rgb(32, 184, 146);
+
+}
+
+.left4:after {
+	transform-origin: right center;
+	transform: rotateZ(-144deg);
+}
+
+.right4:after {
+    transform-origin: left center;
+    transform: rotateZ(-24deg);
+}
+
+/* 
+.progress h5{
+	font-size: 1.2rem;
+	color: #e5252a;
+	text-align: center;
+	margin-top: 1rem;
+}	
+ */
+
+.progress1 span {
+	font-size: 17px;
+	color: rgb(33, 172, 239);
+	text-align: center;
+	margin-top: 14px;
+	display: block;
+}
+
+.progress2 span {
+	font-size: 17px;
+	color: rgb(251, 130, 70);
+	text-align: center;
+	margin-top: 14px;
+	display: block;
+}
+
+.progress3 span {
+	font-size: 17px;
+	color: rgb(237, 112, 120);
+	text-align: center;
+	margin-top: 14px;
+	display: block;
+}
+
+.progress4 span {
+	font-size: 17px;
+	color: rgb(32, 184, 146);
+	text-align: center;
+	margin-top: 14px;
+	display: block;
+}

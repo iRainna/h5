@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" type="text/css" href="css/headerAndNav.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/sec_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/page7.css" />
+		<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="header">
+				<ul class="headerul">
+					<li class="headerli">
+						<div class="logo"></div>
+						<div class="headerTitle">
+							儿羽教育咨询有限公司
+						</div>
+
+					</li>
+					<li class="headerli">
+						<div class="headerdiv">
+							<p class="headerText">联系方式 <br /> <span class="headerText2">400-000-0026</span>
+							</p>
+						</div>
+						<div class="headera " @click="flag=!flag"></div>
+					</li>
+				</ul>
+			</div>
+
+			<nav class="home_nav " v-if="flag">
+				<a href="home.html">关于儿羽</a>
+				<a href="page2.html">加盟我们</a>
+				<a href="page3.html">金牌项目</a>
+				<a href="page4.html">信息化管理系统</a>
+				<a href="page5.html">儿羽商学院</a>
+				<a href="page6.html">儿羽动态</a>
+				<a href="page8.html">联系我们</a>
+			</nav>
+
+		</div>
+
+		<div id="main">
+			<div class="p7head">
+				<p class="title">{{title}}</p>
+				<p class="titleContent">发布时间：{{time}} &nbsp;&nbsp;&nbsp;&nbsp;浏览：{{times}}</p>
+			</div>
+			<div class="p7body">
+				<div class="center">
+					<p class="body_p">{{msg1}}</p>
+					<img :src="imgurl" width="345" class="img">
+					<p class="body_p">{{msg2}}</p>
+					<p class="body_p">{{msg3}}</p>
+				</div>
+				<div class="btn">
+					<ul>
+						<li> <a class="gt">下一篇&gt;</a> </li>
+						<li> <a class="lt">&lt;上一篇</a> </li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<section class="sec6">
+			<p><span>细致早教，儿羽相伴</span><br />加入我们，为您提供全方位解决方案</p>
+		</section>
+		<footer class="ftr">
+			<ul>
+				<li>官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+			</ul>
+			<p>Copyright &#169 www.eryu.com,All Rights Reserved.</p>
+		</footer>
+
+
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					flag: false,
+					flag2: false
+				},
+				methods: {}
+			});
+
+			var main = new Vue({
+				el: '#main',
+				data: {
+					title: '标题标题标题',
+					time: '2020-05-10',
+					times: '109次',
+					msg1: '动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容',
+					msg2: '动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容',
+					msg3: '动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容动态内容',
+					imgurl: 'image/page7/img.png'
+				},
+				methods: {
+
+				}
+			})
+		</script>
+
+
+
+	</body>
+</html>

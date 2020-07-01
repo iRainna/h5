@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" type="text/css" href="css/headerAndNav.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/sec_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/page3.css" />
+		<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<ul class="headerul">
+					<li class="headerli">
+						<div class="logo"></div>
+						<div class="headerTitle">
+							儿羽教育咨询有限公司
+						</div>
+
+					</li>
+					<li class="headerli">
+						<div class="headerdiv">
+							<p class="headerText">联系方式 <br /> <span class="headerText2">400-000-0026</span>
+							</p>
+						</div>
+						<div class="headera " @click="flag=!flag"></div>
+					</li>
+				</ul>
+			</div>
+
+			<nav class="home_nav " v-if="flag">
+				<a href="home.html">关于儿羽</a>
+				<a href="page2.html">加盟我们</a>
+				<a href="javascript:;">金牌项目</a>
+				<a href="page4.html">信息化管理系统</a>
+				<a href="page5.html">儿羽商学院</a>
+				<a href="page6.html">儿羽动态</a>
+				<a href="page8.html">联系我们</a>
+			</nav>
+			<!-- 	<div class="fix">
+				<div class="s5_logo3 circle" @click="flag2=!flag2">
+				</div>
+				<p @click="flag2=!flag2">联系客服</p>
+			</div>
+			<div class="dig" v-if="flag2">
+				<p>扫码联系</p>
+				<div class="dig_imgbox">
+					<img src="image/c_qr.png" width="140">
+				</div>
+		
+			</div> -->
+		</div>
+		<div class="p3kv"></div>
+		<section class="p3sec">
+			<h1 class="sec1_h1">儿羽水育护理</h1>
+			<h2 class="sec1_h2">细致早教，儿羽相伴</h2>
+			<div class="video" id="controlVideo">
+				
+				<video id="video" v-if="flag" src="image/page3/1.mp4"  width="375" height="190" class="videostyle" controls="controls" preload>
+					
+				</video>
+				<img src="image/page3/SP.png" v-if="!flag" @click="showOrHide()" width="345">
+			</div>
+			<p >&nbsp;&nbsp;&nbsp;&nbsp;区别于一般泡澡式游泳，结合宝宝大运动发展分段式的被动操和主被动操，结合认知、语言、社会性和精细发展的陪护课程，结合小儿推拿的抚触按摩。儿羽水育护理根据五大领域、八大智能及不同月龄段婴幼儿的敏感期针对性的进行护理和早教课程。</p>
+		</section>
+
+<section class="p3sec">
+			<h1 class="sec1_h1">儿羽水育护理</h1>
+			<h2 class="sec1_h2">细致早教，儿羽相伴</h2>
+			<div class="video" id="controlVideo2">
+				
+				<video id="video2" v-if="flag" src="image/page3/1.mp4"  width="375" height="190" class="videostyle" controls="controls" preload>
+					
+				</video>
+				<img src="image/page3/SP.png" v-if="!flag" @click="showOrHide()" width="345">
+			</div>
+			<p >&nbsp;&nbsp;&nbsp;&nbsp;区别于一般泡澡式游泳，结合宝宝大运动发展分段式的被动操和主被动操，结合认知、语言、社会性和精细发展的陪护课程，结合小儿推拿的抚触按摩。儿羽水育护理根据五大领域、八大智能及不同月龄段婴幼儿的敏感期针对性的进行护理和早教课程。</p>
+		</section>
+		<section class="p4sec">
+			<h1 class="sec1_h1">儿羽水育护理</h1>
+			<h2 class="sec1_h2">细致早教，儿羽相伴</h2>
+			<div class="video" id="controlVideo3">
+				
+				<video id="video3" v-if="flag" src="image/page3/1.mp4"  width="375" height="190" class="videostyle" controls="controls" preload>
+					
+				</video>
+				<img src="image/page3/SP.png" v-if="!flag" @click="showOrHide()" width="345">
+			</div>
+			<p >&nbsp;&nbsp;&nbsp;&nbsp;区别于一般泡澡式游泳，结合宝宝大运动发展分段式的被动操和主被动操，结合认知、语言、社会性和精细发展的陪护课程，结合小儿推拿的抚触按摩。儿羽水育护理根据五大领域、八大智能及不同月龄段婴幼儿的敏感期针对性的进行护理和早教课程。</p>
+		</section>
+
+		<section class="sec5">
+			<ul class="sec5_ul">
+				<li class="sec5_li2">
+					<div class="s5_logo1"></div>
+					<p class="s5_p">儿羽婴幼儿水育馆<br />官方微博</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo2"></div>
+					<p class="s5_p">儿羽商学院<br />官方公众号</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo3"></div>
+					<p class="s5_p">儿羽little wings<br />官方微信</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40" @click="showOrHide">
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="sec6">
+			<p><span>细致早教，儿羽相伴</span><br />加入我们，为您提供全方位解决方案</p>
+		</section>
+		<footer class="ftr">
+			<ul>
+				<li>官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+			</ul>
+			<p>Copyright &#169 www.eryu.com,All Rights Reserved.</p>
+		</footer>
+		<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
+
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					flag: false,
+					flag2: false
+				},
+				methods: {}
+			});
+			
+			var video=new Vue({
+				el:'#controlVideo',
+				data:{
+					flag:false
+				},
+				methods:{
+					showOrHide(){
+						this.flag=!this.flag;
+						let v=document.getElementById('video');
+						v.play();
+					}
+				}
+			})
+			var video2=new Vue({
+				el:'#controlVideo2',
+				data:{
+					flag:false
+				},
+				methods:{
+					showOrHide(){
+						this.flag=!this.flag;
+						let v=document.getElementById('video2');
+						v.play();
+					}
+				}
+			})
+			var video3=new Vue({
+				el:'#controlVideo3',
+				data:{
+					flag:false
+				},
+				methods:{
+					showOrHide(){
+						this.flag=!this.flag;
+						let v=document.getElementById('video3');
+						v.play();
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

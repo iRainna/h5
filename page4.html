@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" type="text/css" href="css/headerAndNav.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/sec_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/page4.css"/>
+		<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<ul class="headerul">
+					<li class="headerli">
+						<div class="logo"></div>
+						<div class="headerTitle">
+							儿羽教育咨询有限公司
+						</div>
+		
+					</li>
+					<li class="headerli">
+						<div class="headerdiv">
+							<p class="headerText">联系方式 <br /> <span class="headerText2">400-000-0026</span>
+							</p>
+						</div>
+						<div class="headera " @click="flag=!flag"></div>
+					</li>
+				</ul>
+			</div>
+		
+			<nav class="home_nav " v-if="flag">
+				<a href="home.html">关于儿羽</a>
+				<a href="page2.html">加盟我们</a>
+				<a href="page3.html">金牌项目</a>
+				<a href="javascript:;">信息化管理系统</a>
+				<a href="page5.html">儿羽商学院</a>
+				<a href="page6.html">儿羽动态</a>
+				<a href="page8.html">联系我们</a>
+			</nav>
+			<!-- 	<div class="fix">
+				<div class="s5_logo3 circle" @click="flag2=!flag2">
+				</div>
+				<p @click="flag2=!flag2">联系客服</p>
+			</div>
+			<div class="dig" v-if="flag2">
+				<p>扫码联系</p>
+				<div class="dig_imgbox">
+					<img src="image/c_qr.png" width="140">
+				</div>
+		
+			</div> -->
+		</div>
+		<div class="p4kv"></div>
+		<section class="main">
+			<h1 class="sec1_h1">软件介绍</h1>
+			<h2 class="sec1_h2">Software introduction</h2>
+			<div class="p4content">
+				<p class="c_title">儿羽门店预约</p>
+				<p class="c_content">儿羽门店预约小程序是专为儿羽非会员客户打造，儿羽品牌商户可根据自身情况设置新客户体验套餐，可实现信息绑定、在线购买、消费核销、使用情况查询、非会员预约及成长记录查看等功能。为儿羽品牌商户节省客户维护成本，拉近客户距离。</p>
+				<div class="f_logo l"></div>
+			</div>
+			
+			<div class="p4content">
+				<p class="c_title t2">儿羽家长端</p>
+				<p class="c_content">
+					儿羽家长端APP应用是为儿羽品牌的会员家长打造的专属空间，在APP内可实现全面的服务点评、建议上传、星级评定等。同时可查看孩子每一次的游泳记录，包含身高、体重、体温、时长、课程进度、照片等。在增加会员互动性的同时，提高会员与泳馆的粘度，给予会员美好的纪念。
+					</p>
+				<div class="f_logo l2"></div>
+			</div>
+			<div class="p4content">
+				<p class="c_title">儿羽boss</p>
+				<p class="c_content">
+					儿羽boss小程序与ERP管理系统、老师端小程序、新客户端小程序进行多端互联，实时向管理者展示店铺营业数据，包含当日收入简表、预约服务人数经营数据查询、员工数据展示、库存明细查询等多方位功能。为加盟商实现透明、高效的远程管理
+					</p>
+				<div class="f_logo l"></div>
+			</div>
+			<div class="p4content">
+				<p class="c_title ">ERP管理系统</p>
+				<p class="c_content">
+					儿羽ERP管理平台集先进管理理念与行业实用性于一身，结合多个端口实现信息集中管理。主要分为会员管理与数据分析两大板块。包含客户信息管理、经营数据管理、员工管理三大部分。精准进行数据分类处理及展示，经营数据一目了然。
+					</p>
+				<div class="f_logo l4"></div>
+			</div>
+			<div class="p4content">
+				<p class="c_title">儿羽教育</p>
+				<p class="c_content">
+					儿羽老师端小程序是为行业内员工量身开发，包含预约查看、服务查看、客户数据上传、客户评价查看、培训学习、历史数据查看等功能。<br/>前端通过预约、服务、数据上传等与家长进行家园式互动，后端通过个人绩效考核、提成计算、业绩排名、历史评价实现透明化管理。
+					</p>
+				<div class="f_logo l"></div>
+			</div>
+		</section>
+		
+		
+		
+		
+		<section class="sec5">
+			<ul class="sec5_ul">
+				<li class="sec5_li2">
+					<div class="s5_logo1"></div>
+					<p class="s5_p">儿羽婴幼儿水育馆<br />官方微博</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo2"></div>
+					<p class="s5_p">儿羽商学院<br />官方公众号</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo3"></div>
+					<p class="s5_p">儿羽little wings<br />官方微信</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40" @click="showOrHide">
+					</div>
+				</li>
+			</ul>
+		<section class="sec6">
+			<p><span>细致早教，儿羽相伴</span><br />加入我们，为您提供全方位解决方案</p>
+		</section>
+		<footer class="ftr">
+			<ul>
+				<li>官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+			</ul>
+			<p>Copyright &#169 www.eryu.com,All Rights Reserved.</p>
+		</footer>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					flag: false,
+					flag2: false
+				},
+				methods: {}
+			});
+			
+		</script>
+	</body>
+</html>

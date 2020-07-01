@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" type="text/css" href="css/headerAndNav.css" />
+		<link rel="stylesheet" type="text/css" href="css/sec_title.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/loading.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/swiper.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/swiper_demo.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui-v2.5.6/css/layui.css" />
+		<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+
+
+			<div class="header">
+				<ul class="headerul">
+					<li class="headerli">
+						<div class="logo"></div>
+						<div class="headerTitle">
+							儿羽教育咨询有限公司
+						</div>
+
+					</li>
+					<li class="headerli">
+						<div class="headerdiv">
+							<p class="headerText">联系方式 <br /> <span class="headerText2">400-000-0026</span>
+							</p>
+						</div>
+						<div class="headera " @click="flag=!flag"></div>
+					</li>
+				</ul>
+			</div>
+
+			<nav class="home_nav " v-if="flag">
+				<a href="javascript:;">关于儿羽</a>
+				<a href="page2.html">加盟我们</a>
+				<a href="page3.html">金牌项目</a>
+				<a href="page4.html">信息化管理系统</a>
+				<a href="page5.html">儿羽商学院</a>
+				<a href="page6.html">儿羽动态</a>
+				<a href="page8.html">联系我们</a>
+			</nav>
+			<div class="fix">
+				<div class="s5_logo3 circle" @click="flag2=!flag2">
+				</div>
+				<p @click="flag2=!flag2">联系客服</p>
+			</div>
+			<div class="dig" v-if="flag2">
+				<p>扫码联系</p>
+				<div class="dig_imgbox">
+					<img src="image/c_qr.png" width="140">
+				</div>
+
+			</div>
+		</div>
+		<div class="lay">
+
+			<div class="layui-carousel" id="test1">
+				<div carousel-item>
+					<div class="show show1"></div>
+					<div class="show show2"></div>
+					<div class="show show3"></div>
+					<div class="show show4"></div>
+					<div class="show show5"></div>
+				</div>
+			</div>
+		</div>
+		<section class="sec1">
+			<h1 class="sec1_h1">关于儿羽</h1>
+			<h2 class="sec1_h2">About little wings</h2>
+			<p class="sec1_p1">&nbsp;&nbsp;&nbsp;儿羽，little wings,儿童游泳教育品牌，婴幼儿游泳整体解决方案提供商，公司注册资金1100万。儿羽始终致力于0-6岁婴幼儿水育事业的开发和研究。
+				<br />
+				&nbsp;&nbsp;&nbsp;目前，儿羽除招商加盟业务以外，旗下还设儿羽商学院和婴游行业门店管理系统提供等两大板块
+			</p>
+			<div class="img">
+				<img src="image/p1.png" class="sec1_img">
+			</div>
+			<p class="sec1_p2">
+				&nbsp;&nbsp;&nbsp;儿羽是一家集课程研发、师资培训、店铺成长管理、信息和管理系统开发于一体的综合性连锁教育服务企业。迄今为止，儿羽已为全国多家婴游机构提供专业培训。
+				<br /> &nbsp;&nbsp;&nbsp;同时，儿羽旗下自主开发的婴泳行业专业信息化数据管理平台已获多项国家知识产权局认证证书，其中包括：ERP客户管理平台、家长端手机APP、商户端小程序、老师端小程序、新客户端小程序等
+			</p>
+		</section>
+
+		<section class="sec1">
+			<h1 class="sec1_h1">品牌荣誉</h1>
+			<h2 class="sec1_h2">Brand honors</h2>
+			<div class="sw">
+				<div class="swiper-container2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide ">
+							<img src="image/pic.png" width="315">
+						</div>
+						<div class="swiper-slide"><img src="image/pic.png" width="315"></div>
+						<div class="swiper-slide"><img src="image/pic.png" width="315"></div>
+
+					</div>
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+			</div>
+
+		</section>
+		<section class="sec1">
+			<h1 class="sec1_h1">企业文化</h1>
+			<h2 class="sec1_h2">Company culture</h2>
+			<h3 class="sec1_h3">儿羽人四大基本要素</h3>
+			<ul class="sec_ul">
+				<li class="sec_li">
+					<div class="loading">
+						<div class="left left1"></div>
+						<div class="right right1"></div>
+						<div class="progress progress1">
+							<!-- <h5>76%</h5> -->
+							<span>聪明</span>
+						</div>
+					</div>
+				</li>
+				<li class="sec_li">
+					<div class="loading">
+						<div class="left left2"></div>
+						<div class="right right2"></div>
+						<div class="progress progress2">
+							<!-- <h5>76%</h5> -->
+							<span>皮实</span>
+						</div>
+					</div>
+				</li>
+				<li class="sec_li">
+					<div class="loading">
+						<div class="left left3"></div>
+						<div class="right right3"></div>
+						<div class="progress progress3">
+							<!-- <h5>76%</h5> -->
+							<span>乐观</span>
+						</div>
+					</div>
+				</li>
+				<li class="sec_li">
+					<div class="loading">
+						<div class="left left4"></div>
+						<div class="right right4"></div>
+						<div class="progress progress4">
+							<!-- <h5>76%</h5> -->
+							<span>自省</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="red_text">
+				<p class="red_p">
+					通过儿羽教育，让全天下家庭明白早教的重要性，乐于享受儿羽的服务
+					<br /> 客户所需，我们所做
+				</p>
+			</div>
+		</section>
+		<section class="sec1">
+			<h1 class="sec1_h1">门店展示</h1>
+			<h2 class="sec1_h2">Store display</h2>
+			<div class="sec4_div">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="image/pic.png" width="315"></div>
+						<div class="swiper-slide"><img src="image/pic.png" width="315"></div>
+						<div class="swiper-slide"><img src="image/pic.png" width="315"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<h3 class="sec1_h3 mb">献给每一位<span>little wings</span>的家人有你，便有儿羽</h3>
+		</section>
+		<section class="sec5">
+			<ul class="sec5_ul">
+				<li class="sec5_li2">
+					<div class="s5_logo1"></div>
+					<p class="s5_p">儿羽婴幼儿水育馆<br />官方微博</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo2"></div>
+					<p class="s5_p">儿羽商学院<br />官方公众号</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+				<li class="sec5_li">
+					<div class="s5_logo3"></div>
+					<p class="s5_p">儿羽little wings<br />官方微信</p>
+					<div class="ac_qr">
+						<img src="image/ac_qr.png" width="40">
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="sec6">
+			<p><span>细致早教，儿羽相伴</span><br />加入我们，为您提供全方位解决方案</p>
+		</section>
+		<footer class="ftr">
+			<ul>
+				<li>官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+				<li class="ftr_li">官网首页</li>
+			</ul>
+			<p>Copyright &#169 www.eryu.com,All Rights Reserved.</p>
+		</footer>
+
+
+		<script src="https://www.layuicdn.com/layui-v2.5.6/layui.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+
+		<script>
+			layui.use('carousel', function() {
+				var carousel = layui.carousel;
+				//建造实例
+				carousel.render({
+					elem: '#test1',
+					width: '100%' //设置容器宽度
+						,
+					height: '180px',
+					arrow: 'always' //始终显示箭头
+					//,anim: 'updown' //切换动画方式
+				});
+			});
+
+
+			var swiper2 = new Swiper('.swiper-container2', {
+
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+
+				coverflow: {
+					rotate: 50,
+					stretch: 0,
+					depth: 100,
+					modifier: 1,
+					slideShadows: true
+				}
+			});
+
+			var swiper = new Swiper('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					flag: false,
+					flag2: false
+				},
+				methods: {}
+			})
+		</script>
+	</body>
+</html>
